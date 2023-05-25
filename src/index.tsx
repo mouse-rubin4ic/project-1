@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import './style.css'
 
 // React Element
 // const title = React.createElement('h1', { id: 'title' }, 'Hello React')
@@ -23,7 +23,7 @@ const Title = () => {
 const Content = () => {
     return (
         <div>
-            <p>
+            <p className="red">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
                 minima voluptatem vero hic, in soluta distinctio accusantium
                 sapiente cum vel autem debitis adipisci earum expedita neque
