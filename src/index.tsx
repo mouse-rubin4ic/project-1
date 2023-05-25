@@ -17,11 +17,12 @@ import './index.css'
 //         </p>
 //     </div>
 // )
-
-const App = () => {
+const Title = () => {
+    return <h1>Hello App component</h1>
+}
+const Content = () => {
     return (
         <div>
-            <h1>Hello App component</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
                 minima voluptatem vero hic, in soluta distinctio accusantium
@@ -35,6 +36,15 @@ const App = () => {
                 modi molestias praesentium inventore.
             </p>
         </div>
+    )
+}
+
+const App = () => {
+    return (
+        <>
+            <Title />
+            <Content />
+        </>
     )
 }
 
