@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style.css'
+import Title from './Title'
 
 // React Element
 // const title = React.createElement('h1', { id: 'title' }, 'Hello React')
@@ -18,13 +19,6 @@ import './style.css'
 //     </div>
 // )
 
-type  = TitleProps {
-    title: string
-}
-
-const Title = (props: TitleProps) => {
-    return <h1>Hello {props.title} component</h1>
-}
 const Content = () => {
     return (
         <div>
@@ -48,7 +42,7 @@ const App = () => {
     return (
         <>
             <Title title="App" />
-            <Title title="React" />
+            <Title title="React" num={2} />
             <Content />
         </>
     )
