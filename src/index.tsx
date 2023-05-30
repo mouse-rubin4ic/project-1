@@ -17,8 +17,13 @@ import './style.css'
 //         </p>
 //     </div>
 // )
-const Title = () => {
-    return <h1>Hello App component</h1>
+
+type  = TitleProps {
+    title: string
+}
+
+const Title = (props: TitleProps) => {
+    return <h1>Hello {props.title} component</h1>
 }
 const Content = () => {
     return (
@@ -42,7 +47,8 @@ const Content = () => {
 const App = () => {
     return (
         <>
-            <Title />
+            <Title title="App" />
+            <Title title="React" />
             <Content />
         </>
     )
