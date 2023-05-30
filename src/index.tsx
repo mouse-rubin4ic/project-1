@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style.css'
 import Title from './Title'
+import { Content } from './Content'
 
 // React Element
 // const title = React.createElement('h1', { id: 'title' }, 'Hello React')
@@ -19,31 +20,17 @@ import Title from './Title'
 //     </div>
 // )
 
-const Content = () => {
-    return (
-        <div>
-            <p className="red">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                minima voluptatem vero hic, in soluta distinctio accusantium
-                sapiente cum vel autem debitis adipisci earum expedita neque
-                modi molestias praesentium inventore.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                minima voluptatem vero hic, in soluta distinctio accusantium
-                sapiente cum vel autem debitis adipisci earum expedita neque
-                modi molestias praesentium inventore.
-            </p>
-        </div>
-    )
-}
-
 const App = () => {
     return (
         <>
             <Title title="App" />
             <Title title="React" num={2} />
-            <Content />
+            <Content
+                text1={
+                    'Loefro[serufpsuhfpdlrugpdv  udhpfizuh i igouyg uy  g y guuyg  igiugouygi '
+                }
+                text2={'Lorem fsggrd rgsdgdtfghfx txhthfj xtfhtx'}
+            />
         </>
     )
 }
