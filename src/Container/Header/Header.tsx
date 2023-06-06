@@ -18,7 +18,6 @@ const Header = (props: Props) => {
             className="app-bar"
             // sx={{ backgroundColor: 'green' }}
             // style={{ backgroundColor: appBar ? 'green' : 'red' }}
-            // style={{ backgroundColor: 'green' }}
         >
             <Container>
                 <Toolbar>
