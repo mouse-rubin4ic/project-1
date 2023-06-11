@@ -43,7 +43,7 @@ const ProductListItem = ({
                 <div className="product-description">{decscription}</div>
                 <div className="product-features">Type: {type}</div>
                 <div className="product-features">Capasity: {capacity} Gb</div>
-                <div className="product-price">Price: $ {price}</div>
+                <div className="product-price"></div>
                 <div className="product-quantity">
                     <Button
                         variant="outlined"
