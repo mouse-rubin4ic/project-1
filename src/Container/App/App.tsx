@@ -25,9 +25,6 @@ const App = () => {
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header productsInCart={productsInCart} />
-            <button onClick={() => addProductToCart(2, 5)}>
-                Add to Cart (id:3, count:1)
-            </button>
             <Main addProductToCart={addProductToCart} />
         </StyledEngineProvider>
     )
