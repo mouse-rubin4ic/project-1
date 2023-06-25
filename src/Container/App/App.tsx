@@ -7,6 +7,7 @@ import Home from 'pages/Home'
 import { Container } from '@mui/material'
 import CartPage from 'pages/Cart/CartPage'
 import { createContext } from 'react'
+import { omit } from 'lodash'
 
 type ProductsInCart = {
     [id: number]: number
