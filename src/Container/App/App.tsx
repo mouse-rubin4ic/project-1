@@ -15,6 +15,7 @@ type ProductsInCart = {
 
 type Context = {
     removeProductFromCart: (id: number) => void
+    chanegProductQuantity: (id: number, count: number) => void
 }
 
 export const AppContext = createContext<Context | null>(null)
@@ -36,11 +37,19 @@ const App = () => {
         setProductsInCart((prevState) => omit(prevState, id))
     }
 
+    const chanegProductQuantity = (id: number, count: number) => {
+        setProductsInCart((prevState) => ({
+            ...prevState,
+            [id]: count,
+        }))
+    }
+
     return (
         <StyledEngineProvider injectFirst>
             <AppContext.Provider
                 value={{
                     removeProductFromCart: removeProductFromCart,
+                    chanegProductQuantity: chanegProductQuantity,
                 }}
             >
                 <CssBaseline />
