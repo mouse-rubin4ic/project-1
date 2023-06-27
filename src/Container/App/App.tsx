@@ -67,7 +67,7 @@ const App = () => {
                             }
                         />
                         <Route
-                            path="/cart"
+                            path="/cart/:id"
                             element={
                                 <CartPage productsInCart={productsInCart} />
                             }
